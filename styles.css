@@ -10,6 +10,7 @@ body {
 
 .page {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 20px 0;
 }
@@ -36,9 +37,84 @@ header {
   margin-left: 20px;
 }
 
+
 .row {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 20px;
+}
+
+.profile-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile-pic {
+  max-width: 200px;
+  border-radius: 100%;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-box {
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #FFF;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-img {
+  max-height: 40px;
+  max-width: 100%;
+}
+
+.course-box a {
+  margin-top: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  background-color: cornflowerblue;
+  border: 1px solid rgb(76, 114, 184);
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(76, 114, 184);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(130, 169, 240)
+}
+
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .courses {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .course-box {
+    width: 400px;
+  }
 }
