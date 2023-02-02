@@ -8,6 +8,27 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <div class="page">
+    <header>
+      <nav class="navbar">
+        <h1 class="nav-title">Bastien</h1>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="#">Docker</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="row">
+      <div class="row-content">
+        <h1>Docker</h1>
+        <p>Docker is software written for creating, managing and deploying <em>containerized</em> applications.
+           This means that you have full control over the environment your application runs in, including the software it relies on.</p>
+        <p>You could have one container running a WordPress install with PHP 7.4, while having another container running that requires PHP 7.2 without both versions causing problems for each other.</p>
+        <p><strong><em>Why not just use a VM?</em></strong> Containers are much more lightweight and performant because you do not need to emulate all the hardware of a virtual machine. Containers use the same kernel as the host, but build their own layers on top.</p>
+        <p>If you use <em>Docker-Compose</em>, you store the setup for your container in a simpl .yaml file. Wherever you want to (re-)create that same Docker container or stack, you just have to copy the .yaml file, run the command <em>docker-compose up</em>, and you're set!</p>
+        <a href="https://www.docker.com/" target="_blank"><button>Learn more on the Docker website</button></a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
